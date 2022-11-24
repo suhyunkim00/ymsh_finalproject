@@ -1,0 +1,255 @@
+h2 {
+    font-size: 35px;
+}
+
+nav {
+
+    h1 {
+        font-size: 40px;
+        padding-left: 3%;
+    }
+
+    details {
+        padding: 0;
+
+        > summary {
+            font-size: 40px;
+            padding-top: 3%;
+            padding-right: 7%;
+        }
+
+        li {
+            padding-right: 8%;
+        }
+
+        a {
+            font-size: 30px;
+        }
+        
+    }
+
+    
+}
+
+header {
+    > article {
+        h1 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 20px;
+            width: 100%;
+        }
+
+        a {
+            font-size: 18px;
+            padding-top: 2%;
+        }
+    }
+}
+
+.history {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    > section {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+        width: 90%;
+        flex-wrap: wrap;
+
+        > article {
+            width: 30% !important;
+        }
+    }
+
+}
+
+.map {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 35vh;
+
+    >section {
+        width: 60%;
+
+        >iframe {
+            width: 30vh;
+            height: 20vh;
+        }
+       >aside {
+        width: 30vh;
+        padding: 2%;
+        padding-left: 8%;
+
+
+         >article p{
+            padding-left: 20%;
+            font-size: 20px;
+        }
+
+        i {
+            font-size: 20px;
+        }
+       
+    
+       } 
+    }
+
+    > article {
+        width: 40%;
+        height: 80%;
+
+        h5 {
+            font-size: 25px;
+        }
+    }
+}
+.progress {
+    height: 20%;
+}
+
+.progress-bar {
+    font-size: 30px;
+}
+
+.sign {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    label {
+        font-size: 18px !important;
+    }
+
+    form {
+        width: 80% !important;
+
+        >label {
+            font-size: 30px;
+        }
+    }
+
+    
+}
+
+[type="submit"] {
+    font-size: 20px !important;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.col-md-6 {
+    width: 100%;
+}
+
+.join {
+    width: 100%;
+    height: 110vh;
+
+    > article {
+
+        > section > article {
+
+            width: 100%;
+            height: 20vh;
+            h3 {
+                font-size: 60px !important;       
+            }
+
+            p {
+                font-size: 25px !important;
+            }
+
+            a {
+                font-size: 25px !important;
+
+            }
+
+
+        }
+
+        img {
+            width: 50vh;
+            height: 30vh;
+        }
+
+        >aside {
+            padding-top: 20%!important;
+            display: flex;
+            flex-direction: row !important;
+            column-gap: 3vh;
+
+            >article {
+                width: 30%;
+                padding: 2%;
+
+                h4 {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 20px !important;
+                }
+
+                a {
+                    font-size: 25px !important;
+                }
+            }
+        }
+    }
+
+}
+
+blockquote {
+    font-size: 20px !important;
+    width: 80% !important;
+    text-align: justify !important;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+.health {
+    padding-bottom: 5%;
+    p {
+        font-size: 20px !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    > article {
+        flex-direction: row !important;
+        column-gap: 2vh;
+
+        >aside {
+            width: 100% !important;
+            align-items: center !important;
+            padding: 2%!important;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    background-color: $defaultGray;
+    align-items: center;
+    p {
+        font-size: 18px;
+        font-weight: 500;
+        padding-top:2%;
+    }
+
+}
+
+
+
+
+
