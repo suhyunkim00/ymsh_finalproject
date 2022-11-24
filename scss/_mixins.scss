@@ -1,9 +1,8 @@
-@mixin flexColumn{
+@mixin flexcolumn {
     display: flex;
     flex-direction: column;
 }
-
-@mixin flexGap ($direction, $column, $row) {
+@mixin flexGap ($direction,$column,$row) {
     display: flex;
     flex-direction: $direction;
     column-gap: $column;
@@ -18,7 +17,7 @@
     $row: 0
 ) {
     display: flex;
-    flex-direction: $diretion;
+    flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
     column-gap: $column;
