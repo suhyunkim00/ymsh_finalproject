@@ -1,0 +1,972 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,200;0,700;0,900;1,400&family=Raleway:ital@1&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main > section:nth-child(2) {
+  font-family: "Noto Sans", sans-serif;
+}
+
+main > section:nth-child(2) {
+  background-color: rgb(210, 210, 210);
+}
+
+main > section:nth-child(4) {
+  background-color: rgb(210, 210, 210);
+}
+
+@media (min-width: 200px) {
+  nav {
+    display: flex;
+    flex-direction: space-evenly;
+    width: 100%;
+    padding: 3%;
+    align-items: center;
+  }
+  nav > ul {
+    display: none;
+  }
+  nav h1 {
+    color: dimgray;
+    text-transform: uppercase;
+  }
+  nav > aside {
+    display: flex;
+    flex-direction: space-between;
+    align-items: center;
+  }
+  details {
+    position: absolute;
+    text-align: right;
+    padding-right: 10%;
+    width: 75%;
+  }
+  details ul {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  details li {
+    display: flex;
+    padding-right: 14%;
+    width: 100%;
+  }
+  details a:hover {
+    color: rgb(75, 142, 213);
+  }
+  details a {
+    width: 100%;
+    color: dimgray;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 1%;
+    text-transform: capitalize;
+  }
+  details summary {
+    font-size: 24px;
+    color: dimgray;
+    padding-bottom: 5%;
+    padding-right: 0;
+  }
+  header {
+    background-image: url(/img/info-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 20vh;
+  }
+  header > article {
+    background-color: rgba(50, 50, 50, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header h1 {
+    color: rgb(210, 210, 210);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  header p {
+    color: white;
+    width: 60%;
+    text-align: center;
+    font-size: 12px;
+  }
+  header a {
+    color: white;
+    background-color: rgb(75, 142, 213);
+    padding: 2%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  header a:hover {
+    color: rgb(75, 142, 213);
+    background-color: rgb(210, 210, 210);
+    font-weight: 600;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 6vh;
+  }
+  h2 {
+    color: rgb(75, 142, 213);
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+    text-transform: capitalize;
+  }
+  .history {
+    display: flex;
+    flex-direction: column;
+  }
+  .history > section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  .history h5 {
+    color: black;
+    text-transform: capitalize;
+  }
+  .history p {
+    color: dimgray;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-align: justify;
+  }
+  .history a {
+    color: whitesmoke;
+    border: none;
+    background-color: rgb(75, 142, 213);
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .history a:hover {
+    color: rgb(75, 142, 213);
+    background-color: rgb(210, 210, 210);
+  }
+  .card > aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .location {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .location .map > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3vh;
+  }
+  .location .map > section > aside > article {
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+    justify-content: space-between;
+    width: 25vh;
+  }
+  .location .map > section i, .location .map > section p {
+    color: black;
+    font-weight: 600;
+  }
+  .location .map > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 5vh;
+  }
+  .location .map > article h5 {
+    text-align: center;
+    font-weight: 500;
+    padding-top: 2vh;
+  }
+  .location .map > article .progress-bar {
+    text-transform: capitalize;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .location iframe {
+    width: 80%;
+    height: 30vh;
+  }
+  .sign > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vh;
+  }
+  .sign > form label {
+    color: dimgray;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .sign > form ::-moz-placeholder {
+    color: rgb(210, 210, 210);
+    font-size: 12px;
+  }
+  .sign > form :-ms-input-placeholder {
+    color: rgb(210, 210, 210);
+    font-size: 12px;
+  }
+  .sign > form ::placeholder {
+    color: rgb(210, 210, 210);
+    font-size: 12px;
+  }
+  .sign [type=submit] {
+    background-color: rgb(75, 142, 213);
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .sign .col-12:last-child {
+    display: flex;
+    justify-content: center;
+  }
+  .join > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .join > article > aside {
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .join > article > aside > article {
+    background-color: navy;
+    width: 30vh;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2vh;
+  }
+  .join > article > aside > article a {
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    padding: 3%;
+    font-size: 14px;
+  }
+  .join > article > aside > article p {
+    color: white;
+    font-size: 12px;
+  }
+  .join > article > aside > article h4 {
+    color: yellow;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .join > article > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .join > article > section > article {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .join > article > section > article h3 {
+    color: navy;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  .join > article > section > article span {
+    color: yellow;
+  }
+  .join > article > section > article p {
+    color: dimgray;
+    text-transform: capitalize;
+    font-size: 15px;
+  }
+  .join > article > section > article blockquote {
+    color: navy;
+    font-size: 12px;
+    width: 90%;
+  }
+  .join > article > section > article a {
+    background-color: rgb(75, 142, 213);
+    color: white;
+    text-decoration: none;
+    padding: 3%;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .join img {
+    width: 38vh;
+    height: 20vh;
+  }
+  .health {
+    display: flex;
+    flex-direction: column;
+  }
+  .health > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .health > section p {
+    width: 80%;
+    color: rgb(210, 210, 210);
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+  .health > article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    align-items: center;
+    padding-bottom: 5vh;
+  }
+  .health > article figure {
+    width: 9vh;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    border: 3px solid rgb(75, 142, 213);
+    border-radius: 50px;
+  }
+  .health > article i {
+    color: rgb(75, 142, 213);
+    padding: 3%;
+    background-color: white;
+    font-size: 30px;
+  }
+  .health > article p {
+    color: dimgray;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .health > article > aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(210, 210, 210);
+    padding: 5%;
+    height: 20vh;
+    width: 80%;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(210, 210, 210);
+    align-items: center;
+  }
+  footer p {
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 2%;
+  }
+}
+@media (min-width: 600px) {
+  h2 {
+    font-size: 35px;
+  }
+  nav h1 {
+    font-size: 40px;
+    padding-left: 3%;
+  }
+  nav details {
+    padding: 0;
+  }
+  nav details > summary {
+    font-size: 40px;
+    padding-top: 3%;
+    padding-right: 7%;
+  }
+  nav details li {
+    padding-right: 8%;
+  }
+  nav details a {
+    font-size: 30px;
+  }
+  header > article h1 {
+    font-size: 32px;
+  }
+  header > article p {
+    font-size: 20px;
+    width: 100%;
+  }
+  header > article a {
+    font-size: 18px;
+    padding-top: 2%;
+  }
+  .history {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .history > section {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .history > section > article {
+    width: 30% !important;
+  }
+  .map {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 35vh;
+  }
+  .map > section {
+    width: 60%;
+  }
+  .map > section > iframe {
+    width: 30vh;
+    height: 20vh;
+  }
+  .map > section > aside {
+    width: 30vh;
+    padding: 2%;
+    padding-left: 8%;
+  }
+  .map > section > aside > article p {
+    padding-left: 20%;
+    font-size: 20px;
+  }
+  .map > section > aside i {
+    font-size: 20px;
+  }
+  .map > article {
+    width: 40%;
+    height: 80%;
+  }
+  .map > article h5 {
+    font-size: 25px;
+  }
+  .progress {
+    height: 20%;
+  }
+  .progress-bar {
+    font-size: 30px;
+  }
+  .sign {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sign label {
+    font-size: 18px !important;
+  }
+  .sign form {
+    width: 80% !important;
+  }
+  .sign form > label {
+    font-size: 30px;
+  }
+  [type=submit] {
+    font-size: 20px !important;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .col-md-6 {
+    width: 100%;
+  }
+  .join {
+    width: 100%;
+    height: 110vh;
+  }
+  .join > article > section > article {
+    width: 100%;
+    height: 20vh;
+  }
+  .join > article > section > article h3 {
+    font-size: 60px !important;
+  }
+  .join > article > section > article p {
+    font-size: 25px !important;
+  }
+  .join > article > section > article a {
+    font-size: 25px !important;
+  }
+  .join > article img {
+    width: 50vh;
+    height: 30vh;
+  }
+  .join > article > aside {
+    padding-top: 20% !important;
+    display: flex;
+    flex-direction: row !important;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+  }
+  .join > article > aside > article {
+    width: 30%;
+    padding: 2%;
+  }
+  .join > article > aside > article h4 {
+    font-size: 30px;
+  }
+  .join > article > aside > article p {
+    font-size: 20px !important;
+  }
+  .join > article > aside > article a {
+    font-size: 25px !important;
+  }
+  blockquote {
+    font-size: 20px !important;
+    width: 80% !important;
+    text-align: justify !important;
+    padding-top: 1%;
+    padding-bottom: 3%;
+  }
+  .health {
+    padding-bottom: 5%;
+  }
+  .health p {
+    font-size: 20px !important;
+    width: 100%;
+    text-align: center;
+  }
+  .health > article {
+    flex-direction: row !important;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  .health > article > aside {
+    width: 100% !important;
+    align-items: center !important;
+    padding: 2% !important;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    background-color: rgb(210, 210, 210);
+    align-items: center;
+  }
+  footer p {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 2%;
+  }
+}
+nav {
+  display: flex;
+  flex-direction: space-evenly;
+  width: 100%;
+  padding: 3%;
+  align-items: center;
+}
+nav > ul {
+  display: none;
+}
+nav h1 {
+  color: dimgray;
+  text-transform: uppercase;
+}
+nav > aside {
+  display: flex;
+  flex-direction: space-between;
+  align-items: center;
+}
+
+details {
+  position: absolute;
+  text-align: right;
+  padding-right: 10%;
+  width: 75%;
+}
+details ul {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+details li {
+  display: flex;
+  padding-right: 14%;
+  width: 100%;
+}
+details a:hover {
+  color: rgb(75, 142, 213);
+}
+details a {
+  width: 100%;
+  color: dimgray;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 1%;
+  text-transform: capitalize;
+}
+details summary {
+  font-size: 24px;
+  color: dimgray;
+  padding-bottom: 5%;
+  padding-right: 0;
+}
+
+header {
+  background-image: url(/img/info-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 20vh;
+}
+header > article {
+  background-color: rgba(50, 50, 50, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  color: rgb(210, 210, 210);
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+header p {
+  color: white;
+  width: 60%;
+  text-align: center;
+  font-size: 12px;
+}
+header a {
+  color: white;
+  background-color: rgb(75, 142, 213);
+  padding: 2%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+header a:hover {
+  color: rgb(75, 142, 213);
+  background-color: rgb(210, 210, 210);
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 6vh;
+}
+
+h2 {
+  color: rgb(75, 142, 213);
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+  text-transform: capitalize;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+}
+.history > section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+}
+.history h5 {
+  color: black;
+  text-transform: capitalize;
+}
+.history p {
+  color: dimgray;
+  text-transform: capitalize;
+  font-size: 14px;
+  text-align: justify;
+}
+.history a {
+  color: whitesmoke;
+  border: none;
+  background-color: rgb(75, 142, 213);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.history a:hover {
+  color: rgb(75, 142, 213);
+  background-color: rgb(210, 210, 210);
+}
+
+.card > aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.location .map > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3vh;
+}
+.location .map > section > aside > article {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 2vh;
+       column-gap: 2vh;
+  justify-content: space-between;
+  width: 25vh;
+}
+.location .map > section i, .location .map > section p {
+  color: black;
+  font-weight: 600;
+}
+.location .map > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 5vh;
+}
+.location .map > article h5 {
+  text-align: center;
+  font-weight: 500;
+  padding-top: 2vh;
+}
+.location .map > article .progress-bar {
+  text-transform: capitalize;
+  font-size: 11px;
+  font-weight: 500;
+}
+.location iframe {
+  width: 80%;
+  height: 30vh;
+}
+
+.sign > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30vh;
+}
+.sign > form label {
+  color: dimgray;
+  font-weight: 600;
+  font-size: 12px;
+}
+.sign > form ::-moz-placeholder {
+  color: rgb(210, 210, 210);
+  font-size: 12px;
+}
+.sign > form :-ms-input-placeholder {
+  color: rgb(210, 210, 210);
+  font-size: 12px;
+}
+.sign > form ::placeholder {
+  color: rgb(210, 210, 210);
+  font-size: 12px;
+}
+.sign [type=submit] {
+  background-color: rgb(75, 142, 213);
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.sign .col-12:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.join > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.join > article > aside {
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+  justify-content: center;
+  align-items: center;
+}
+.join > article > aside > article {
+  background-color: navy;
+  width: 30vh;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2vh;
+}
+.join > article > aside > article a {
+  color: white;
+  border: 2px solid white;
+  text-decoration: none;
+  padding: 3%;
+  font-size: 14px;
+}
+.join > article > aside > article p {
+  color: white;
+  font-size: 12px;
+}
+.join > article > aside > article h4 {
+  color: yellow;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.join > article > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.join > article > section > article {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.join > article > section > article h3 {
+  color: navy;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.join > article > section > article span {
+  color: yellow;
+}
+.join > article > section > article p {
+  color: dimgray;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.join > article > section > article blockquote {
+  color: navy;
+  font-size: 12px;
+  width: 90%;
+}
+.join > article > section > article a {
+  background-color: rgb(75, 142, 213);
+  color: white;
+  text-decoration: none;
+  padding: 3%;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.join img {
+  width: 38vh;
+  height: 20vh;
+}
+
+.health {
+  display: flex;
+  flex-direction: column;
+}
+.health > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.health > section p {
+  width: 80%;
+  color: rgb(210, 210, 210);
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.health > article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+  align-items: center;
+  padding-bottom: 5vh;
+}
+.health > article figure {
+  width: 9vh;
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  border: 3px solid rgb(75, 142, 213);
+  border-radius: 50px;
+}
+.health > article i {
+  color: rgb(75, 142, 213);
+  padding: 3%;
+  background-color: white;
+  font-size: 30px;
+}
+.health > article p {
+  color: dimgray;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+.health > article > aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(210, 210, 210);
+  padding: 5%;
+  height: 20vh;
+  width: 80%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(210, 210, 210);
+  align-items: center;
+}
+footer p {
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 2%;
+}/*# sourceMappingURL=style.css.map */
