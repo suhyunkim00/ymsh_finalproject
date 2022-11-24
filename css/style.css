@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;600&family=Noto+Sans:wght@500&family=Open+Sans:wght@300;400;500;600;700;800&family=Quicksand&family=Roboto:wght@100;300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main > section:nth-child(2),
+main > section:nth-child(4) {
+  background-color: rgb(210, 210, 210);
+}/*# sourceMappingURL=style.css.map */
