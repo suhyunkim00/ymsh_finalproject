@@ -437,3 +437,16 @@ iframe {
         }
     }
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: $defaultGray;
+    align-items: center;
+    p {
+        font-size: 15px;
+        font-weight: 500;
+        padding-top:2%;
+    }
+
+}
