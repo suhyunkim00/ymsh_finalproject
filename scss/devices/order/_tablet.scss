@@ -1,0 +1,54 @@
+header {
+    height: 25vh;
+}
+
+h2 {
+    padding-top: 5%;
+}
+
+.theatre {
+    select {
+        height: 4vh;
+    }
+}
+
+.combo,
+.popcorn,
+.drink,
+.snack {
+
+    img {
+        width: 100%;
+        height: 18vh;
+    }
+}
+
+.combo > article,
+.popcorn > article,
+.drink > article,
+.snack > article {
+    width: 90%;
+    justify-content: left;
+    column-gap: 1vh;
+}
+
+figure {
+    width: 23%;
+}
+
+figcaption {
+    height: 8vh;
+    justify-content: space-between;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+small {
+    font-size: 16px;
+}
+
+p {
+    font-size: 18px;
+}

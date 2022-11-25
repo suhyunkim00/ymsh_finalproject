@@ -1,0 +1,28 @@
+header {
+    height: 60vh;
+}
+
+nav{
+    column-gap: 3vh;
+}
+
+.theatre {
+    padding: 2%;
+}
+
+.combo > article,
+.popcorn > article,
+.drink > article,
+.snack > article {
+    width: 70%;
+
+    img {
+        height: 22vh;
+    }
+
+    figcaption {
+        row-gap: 2vh;
+        height: 13vh;
+        
+    }
+}
