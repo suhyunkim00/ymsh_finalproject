@@ -42,6 +42,46 @@
             </ul>
         </details>
     </nav>
+    <header>
+        <article id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <aside class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </aside>
+            <article class="carousel-inner">
+              <aside class="carousel-item active">
+                <img src="/img/header1.jpeg" class="d-block w-100" alt="header1">
+                <article class="carousel-caption d-none d-md-block">
+                  <h5>avengers is coming soon</h5>
+                  <p>2023 adventure/action 2h 23m </p>
+                </article>
+              </aside>
+              <aside class="carousel-item">
+                <img src="/img/header2.jpeg" class="d-block w-100" alt="header2">
+                <article class="carousel-caption d-none d-md-block">
+                  <h5>Black panther is on the screen</h5>
+                  <p>2022 adventure/action 2h 41m</p>
+                </article>
+              </aisde>
+              <aside class="carousel-item">
+                <img src="/img/header3.jpeg" class="d-block w-100" alt="header3">
+                <article class="carousel-caption d-none d-md-block">
+                  <h5>doctor strange is coming soon</h5>
+                  <p>2024 adventure/action 2h 50m</p>
+                </article>
+              </aside>
+            </article>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </article>
+    </header>   
     <main>
         <section class="movies" id="movies">
             <h2>Movie Chart</h2>
@@ -144,6 +184,39 @@
                 </figure>
             </article>
         </section>
+        <section class="mr" id="movieranking">
+            <article>
+              <h2>movie ranking</h2>
+            </article>
+            <section>
+              <ol>
+                <li>
+                  <figure>
+                    <img src="/img/thor.jpeg" alt="thor">
+                    <figcaption>thor</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="/img/captain.jpeg" alt="captain">
+                    <figcaption>captain marvel</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="/img/spiderman.jpeg" alt="spider">
+                    <figcaption>spider man</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="/img/ironman.jpeg" alt="iron">
+                    <figcaption>iron man</figcaption>
+                  </figure>
+                </li>
+              </ol>
+            </section>
+          </section>
         <section class="event" id="event">
             <h2>Event</h2>
             <article id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
@@ -167,6 +240,56 @@
                   <span class="visually-hidden">Next</span>
                 </button>
             </article>
+        </section>
+        <section class="refund" id="refund">
+          <h2>refund policy</h2>
+          <article class="accordion" id="accordionExample">
+            <aside class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Reservation cancellation information
+                </button>
+              </h2>
+              <article id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                  
+                    charge a fee
+                    - Cancellation fee policy may vary depending on product characteristics. (available at the time of reservation)
+                    - The reservation fee is refunded only before 12:00 pm on the day of reservation.
+                    - Cancellation fees are charged differently depending on the time of cancellation. For more information, please visit Customer Center > Fee Information.
+                </section>
+              </article>
+            </aside>
+            <aside class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Reservation details cannot be changed after reservation
+                </button>
+              </h2>
+              <article id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    - Some changes (date/time/seat/payment, etc.) of the reservation are not allowed, so you must cancel the existing reservation and make a new reservation.
+                    However, depending on the time of cancellation, the reservation fee may not be refunded or a cancellation fee may be charged.
+                    - If you make a re-booking, the seat you previously reserved may not be guaranteed.
+                </section>
+              </article>
+            </aside>
+            <aside class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  refund information
+                </button>
+              </h2>
+              <article id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                  The amount excluding the shipping fee, cancellation fee according to the time of cancellation, and reservation fee will be partially canceled.
+
+                  - After 3-5 business days from the date of cancellation (based on weekdays,excluding Saturdays/Sundays/holidays), you can check with your credit card company.
+                  - Due to the personal information verification process, ticket link cannot confirm inquiries related to the card company.
+                </section>
+              </article>
+            </aside>
+          </article>
         </section>
     </main>
     <footer>
