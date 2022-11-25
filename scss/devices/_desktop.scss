@@ -1,0 +1,94 @@
+nav {
+    padding: 3%;
+    justify-content: center;
+    
+    i {
+        font-size: 55px;
+    }
+
+    details {
+        display: none;
+    }
+
+    > ul {
+        display: flex;
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    li {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    a {
+        padding: 8%;
+        width: 100%;
+        text-decoration: none;
+        font-size: 13px;
+        background-color: $defaultBlue;
+        color: white;
+        text-align: center;
+        border-right: 1px solid $defaultGray;
+
+        &:hover {
+            background-color: $defaultGray;
+            color: $defaultBlue;
+        }
+    }
+}
+
+.movies {
+    > article {
+        width: 70%;
+    }
+
+    figure {
+        width: 15%;
+    }
+
+    img {
+        height: 20vh;
+    }
+
+    a {
+        width: 80%;
+    }
+    
+}
+
+.mr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    >section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 90%;
+
+        >ol {
+            display: flex;
+            flex-direction: row;
+            column-gap: 2vh;
+        }
+
+        img {
+            width: 30vh;
+            height: 40vh;
+        }
+}
+}
+.refund {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    width: 80%;
+}
