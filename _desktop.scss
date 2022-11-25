@@ -1,94 +1,120 @@
-nav {
-    padding: 3%;
-    justify-content: center;
+nav { 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 0%;
+    padding-right: 0;
+
     
-    i {
-        font-size: 55px;
-    }
-
-    details {
-        display: none;
-    }
-
-    > ul {
+    >ul {
         display: flex;
-        width: 50%;
-        margin-bottom: 0;
+        justify-content: space-between;
+        width: 40%;
+        padding: 0;
     }
 
     li {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        width: 100%;
+        list-style-type: none;
     }
 
     a {
-        padding: 8%;
-        width: 100%;
         text-decoration: none;
-        font-size: 13px;
-        background-color: $defaultBlue;
-        color: white;
-        text-align: center;
-        border-right: 1px solid $defaultGray;
+        color: $defaultBlack;
+        font-weight: 600;
+        text-transform: uppercase;
 
-        &:hover {
-            background-color: $defaultGray;
-            color: $defaultBlue;
+    }
+
+    a:hover {
+        color: $defaultBlue;
+    }
+
+    >aside {
+        display: none;
+    }
+
+    h1 {
+        padding-right: 17%;
+    }
+
+}
+
+header {
+    height: 50vh;
+
+    >article a {
+        font-size: 15px;
+        padding: 1%;
+        }
+}
+
+.location {
+
+    height: 60vh;
+    >section {
+        h2 {
+            padding-bottom: 20%;
         }
     }
 }
 
-.movies {
-    > article {
-        width: 70%;
-    }
-
-    figure {
-        width: 15%;
-    }
-
-    img {
-        height: 20vh;
-    }
-
-    a {
-        width: 80%;
-    }
+.map {
+    height: 80%;
     
-}
 
-.mr {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    >section {
+    >article {
+        
+        padding-right: 10%;
+    }
+
+    >section iframe {
+        width: 65vh;
+        height: 50vh;
+    }
+
+    >section > aside {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        width: 90%;
+        width: 70vh;
+        justify-content: space-between;
+        column-gap: 1vh;
 
-        >ol {
-            display: flex;
-            flex-direction: row;
-            column-gap: 2vh;
+        > article {
+            width: 40%;
+            padding-right: 2%;
+            
         }
 
-        img {
-            width: 30vh;
-            height: 40vh;
+        >article:last-child {
+            width: 35vh;
         }
+
     }
 }
-.refund {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.accordion {
-    width: 80%;
-}
+.join {
+    height: 140vh;
+
+    >article {
+        >section {
+            >article {
+                blockquote {
+                    text-align: center !important;
+
+                }
+
+                  
+                }
+            }
+        }
+    }
+    
+.join > article a:hover{
+
+        color:navy;
+        background-color: white;
+          }
