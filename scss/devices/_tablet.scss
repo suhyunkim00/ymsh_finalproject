@@ -1,0 +1,107 @@
+nav {
+    i {
+        font-size: 50px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    summary {
+        font-size: 45px;
+    }
+
+    details {
+        a {
+            font-size: 25px;
+        }
+    }
+}
+
+h2 {
+    font-size: $defaultH2SizeTab;
+}
+
+footer {
+    padding: 1%;
+    font-size: 15px;
+    
+    i {
+        font-size: 30px;
+    }
+
+    a {
+        font-size: 15px;
+    }
+}
+
+.movies {
+    
+    article {
+        width: 90%;
+    }
+
+    figcaption {
+        height: 23vh;
+        width: 90%;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    small {
+        font-size: 15px;
+    }
+
+    a {
+        padding: 2%;
+        width: 60%;
+        font-size: 18px;
+    }
+
+    img {
+        width: 100%;
+        height: 17vh;
+    }
+}
+
+.mr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    >section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 90%;
+
+        >ol {
+            display: flex;
+            flex-direction: row;
+            column-gap: 2vh;
+        }
+
+        img {
+            width: 10vh;
+            height: 15vh;
+        }
+}
+}
+
+header {
+    width: 100%;
+     h5{
+        font-weight: 600;
+        font-size: 40px;
+        text-transform: uppercase;
+        width: 100%;
+     }
+
+     p {
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+     }
+}
